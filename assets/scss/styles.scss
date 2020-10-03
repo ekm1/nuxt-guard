@@ -1,9 +1,16 @@
+@import "abstract/variables";
+@import "themes/themes";
+@import "base/fonts";
+
+// Components
+@import "components/navbar";
+
 body {
   font-family: var(--font-body);
-  background-color: var(--bg);
+  background-color: var(--bg-color);
   color: var(--color);
   transition: background-color .3s;
 }
 a {
-  color: var(--color-primary)
+  color: var(--primary-color)
 }

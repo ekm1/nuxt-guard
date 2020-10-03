@@ -6,9 +6,9 @@
 
 @mixin darkTheme {
   --color: #ebf4f1;
-  --color-primary: #41b38a;
-  --color-secondary: #fdf9f3;
-  --bg: #091a28;
+  --primary-color: #41b38a;
+  --secondary-color: #fdf9f3;
+  --bg-color: #091a28;
   --bg-secondary: #071521;
   --border-color: #0d2538;
   @include baseTheme;
@@ -16,9 +16,9 @@
 
 @mixin lightTheme {
   --color: #243746;
-  --color-primary: #158876;
-  --color-secondary: #0e2233;
-  --bg: #f3f5f4;
+  --primary-color: #158876;
+  --secondary-color: #0e2233;
+  --bg-color: #f3f5f4;
   --bg-secondary: #fff;
   --border-color: #ddd;
   @include baseTheme;
@@ -27,8 +27,8 @@
 
 @mixin sepiaTheme {
   --color: #433422;
-  --color-secondary: #504231;
-  --bg: #f1e7d0;
+  --secondary-color: #504231;
+  --bg-color: #f1e7d0;
   --bg-secondary: #eae0c9;
   --border-color: #ded0bf;
   @include baseTheme;

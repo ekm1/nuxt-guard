@@ -1,18 +1,25 @@
 <template>
-  <div class="container">
-    <p><Logo /></p>
-    <ThemePicker />
+  <div>
+    <Header />
+    <div class="container">
+      <p>
+        <Logo />
+      </p>
+      <ThemePicker />
+    </div>
   </div>
 </template>
 
 <script>
 import Logo from '@/components/Logo'
 import ThemePicker from '@/components/ui/ThemePicker'
+import Header from '@/components/common/Header'
 
 export default {
   components: {
     Logo,
     ThemePicker,
+    Header,
   },
   head: {
     title: 'Demo of @nuxtjs/color-mode',
@@ -35,10 +42,12 @@ p {
   padding: 20px 0;
   margin: 0;
 }
+
 .container {
   text-align: center;
   padding: 50px;
 }
+
 .note {
   transition: all 0.3s;
   display: inline-block;

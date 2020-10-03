@@ -11,11 +11,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-    '~/assets/scss/fonts.scss',
-    '~/assets/scss/styles.scss',
-    '~/assets/scss/themes.scss',
-  ],
+  css: ['~/assets/scss/styles.scss'],
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 
@@ -44,4 +40,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+  // Modes for theme changing
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    cookie: {
+      key: 'nuxt-guard-theme',
+    },
+  },
 }
