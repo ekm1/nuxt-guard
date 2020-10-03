@@ -1,65 +1,50 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">nuxt-guard</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <p><Logo /></p>
+    <ThemePicker />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+import Logo from '@/components/Logo'
+import ThemePicker from '@/components/ui/ThemePicker'
 
-export default Vue.extend({})
+export default {
+  components: {
+    Logo,
+    ThemePicker,
+  },
+  head: {
+    title: 'Demo of @nuxtjs/color-mode',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Demo of using @nuxtjs/color-mode for NuxtJS, supporting dark mode and custom colors',
+      },
+    ],
+  },
+}
 </script>
 
-<style lang="scss">
+<style scoped>
+p {
+  padding: 20px 0;
+  margin: 0;
+}
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding: 50px;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.note {
+  transition: all 0.3s;
+  display: inline-block;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+  color: var(--color-secondary);
 }
 </style>
