@@ -51,7 +51,7 @@
     "jest": "^26.5.2",
     "lint-staged": "^10.3.0",
     "node-sass": "^4.14.1",
-    "prettier": "^2.1.1",
+    "prettier": "^2.7.0",
     "sass-loader": "^10.1.1",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
